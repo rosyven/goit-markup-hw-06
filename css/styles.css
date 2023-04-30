@@ -299,9 +299,6 @@ button {
   margin-bottom: 8px;
 }
 
-.feature-icon {
-}
-
 .feature-list-title {
   font-weight: 500;
   font-size: 20px;
@@ -544,7 +541,7 @@ button {
   fill: #f4f4fd;
 }
 
-.footer-subscribe-box {
+.footer-contacts {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -574,16 +571,17 @@ button {
   color: var(--white);
 }
 
-.footer-btn {
-  position: relative;
-}
-
 .footer-subscribe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
   background-color: var(--iris);
   border-radius: 4px;
   border: none;
 
-  padding: 8px 64px 8px 24px;
+  padding: 8px 24px;
   min-width: 165px;
 
   font-weight: 500;
@@ -597,10 +595,6 @@ button {
 }
 
 .footer-btn-icon {
-  position: absolute;
-  left: 117px;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 /**
@@ -689,7 +683,7 @@ button {
 
 .label-text {
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 1.7;
   letter-spacing: 0.04em;
   color: var(--light-slate);
 
@@ -759,7 +753,7 @@ button {
   color: rgba(46, 47, 66, 0.4);
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.6;
+  line-height: 1.7;
   letter-spacing: 0.04em;
 }
 
@@ -767,6 +761,8 @@ button {
   display: flex;
   align-items: center;
   gap: 8px;
+
+  position: relative;
 }
 
 .modal-checkbox-input {
@@ -784,14 +780,11 @@ button {
     border-color var(--def-transition);
 }
 
-.checkbox-container {
-  position: relative;
-}
-
 .checkbox-icon {
   position: absolute;
   left: 3px;
-  top: 4px;
+  top: 50%;
+  transform: translateY(-50%);
 
   cursor: pointer;
   opacity: 0;
@@ -808,7 +801,7 @@ button {
 
 .checkbox-text {
   font-size: 12px;
-  line-height: 1.6px;
+  line-height: 1.7;
   letter-spacing: 0.04em;
   color: var(--light-slate);
 }
